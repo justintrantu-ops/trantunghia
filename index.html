@@ -16,7 +16,7 @@
             font-family: 'Georgia', serif;
         }
 
-        /* Conteneur de l'image de fond */
+        /* Conteneur de l'image de fond rendu cliquable */
         .fullscreen-bg {
             position: fixed;
             top: 0;
@@ -28,6 +28,9 @@
             background-size: contain; 
             background-position: center;
             background-repeat: no-repeat;
+            /* Ajout du curseur main pour indiquer que c'est cliquable */
+            cursor: pointer;
+            display: block;
         }
 
         /* Barre de navigation en bas */
@@ -43,6 +46,7 @@
             backdrop-filter: blur(8px);
             border-top: 1px solid rgba(155, 89, 182, 0.2);
             box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+            z-index: 10; /* S'assure que le menu reste au-dessus de l'image */
         }
 
         /* Style des liens */
@@ -81,7 +85,9 @@
 </head>
 <body>
 
-    <div class="fullscreen-bg"></div>
+    <a href="https://tally.so/r/VLZJXa" target="_blank" aria-label="Écrire dans le livre d'or">
+        <div class="fullscreen-bg"></div>
+    </a>
 
     <nav class="footer-nav">
         <a href="https://tally.so/r/VLZJXa" target="_blank" class="nav-link">Écrire dans le livre d'or</a>
