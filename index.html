@@ -5,162 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hommage à Monsieur TRÂN Tú Nghĩa</title>
     <style>
-        body {
+        /* Supprime les marges par défaut */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; 
+            background-color: #ffffff;
             font-family: 'Georgia', serif;
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-            line-height: 1.6;
         }
 
-        .container {
-            background-color: white;
-            max-width: 700px;
-            padding: 60px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            border: 1px solid #e0e0e0;
-            position: relative;
-        }
-
-        .family-list {
-            text-align: left;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-        }
-
-        .announcement {
-            font-style: italic;
-            margin-bottom: 30px;
-            color: #555;
-        }
-
-        .portrait-container {
-            margin: 20px auto;
-            width: 250px;
-            height: 330px;
-            border: 3px solid #9b59b6;
-            overflow: hidden;
-            background-color: #eee;
-        }
-
-        .portrait-container img {
+        /* Conteneur de l'image de fond */
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            /* Utilisation du nom de fichier spécifié */
+            background-image: url('Photo Faire-part décès.png');
+            background-size: contain; 
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        h1 {
-            font-size: 2.2em;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: #2c3e50;
+        /* Barre de navigation en bas */
+        .footer-nav {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0;
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(155, 89, 182, 0.2);
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
         }
 
-        .titles {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-
-        .details {
-            margin-bottom: 40px;
-            font-size: 1.1em;
-        }
-
-        .ceremony {
-            background-color: #fdfaff;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 40px;
-            border: 1px dashed #d1c4e9;
-        }
-
-        .ceremony strong {
-            display: block;
-            font-size: 1.3em;
-            margin: 10px 0;
-            color: #000;
-        }
-
-        /* Style pour le lien du Livre d'Or */
-        .guestbook-link {
-            margin: 30px 0;
-        }
-
-        .btn-guestbook {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: transparent;
-            color: #9b59b6; /* Rappel de la couleur de la bordure */
-            border: 1px solid #9b59b6;
+        /* Style des liens */
+        .nav-link {
             text-decoration: none;
-            border-radius: 2px;
+            color: #2c3e50;
+            font-style: italic;
+            font-size: 1.1em;
             transition: all 0.3s ease;
-            font-style: italic;
-            font-size: 0.95em;
+            padding: 5px 15px;
         }
 
-        .btn-guestbook:hover {
-            background-color: #9b59b6;
-            color: white;
+        .nav-link:hover {
+            color: #9b59b6;
+            transform: translateY(-1px);
         }
 
-        .footer {
-            font-style: italic;
-            margin-top: 20px;
-            color: #555;
+        /* Séparateur visuel */
+        .separator {
+            color: #ccc;
+            user-select: none;
+        }
+
+        /* Adaptation mobile */
+        @media (max-width: 600px) {
+            .footer-nav {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 0;
+            }
+            .separator {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="family-list">
-        Mme TRÂN née NGUYỄN Thị Anh Thơ, son épouse,<br>
-        ses sœurs,<br>
-        Mme TRÂN Tuyết Nhung<br>
-        Mme TRÂN Tuyết Mai<br>
-        Mme NGUYỄN Ngọc Thúy<br>
-        Mme NGUYỄN Ngọc Yến<br>
-        et leur famille
-    </div>
+    <div class="fullscreen-bg"></div>
 
-    <p class="announcement">ont l'immense tristesse de vous faire-part du décès de</p>
-
-    <div class="portrait-container">
-        <img src="portrait.jpg" alt="Monsieur TRÂN Tú Nghĩa">
-    </div>
-
-    <h1>Monsieur TRÂN Tú Nghĩa</h1>
-    <div class="titles">
-        Ancien PDG de HIT Voyages<br>
-        Ancien Président de l'Union Générale des Vietnamiens de France (UGVF)
-    </div>
-
-    <div class="details">
-        survenu le 24 février 2026 à Villejuif<br>
-        dans sa quatre-vingt quatrième année.
-    </div>
-
-    <div class="ceremony">
-        Les obsèques auront lieu le
-        <strong>Jeudi 5 Mars 2026 à 10H30</strong>
-        au crématorium (salle Coupole) du cimetière du Père-Lachaise<br>
-        (55 Rue des Rondeaux, 75020 Paris)
-    </div>
-
-    <div class="guestbook-link">
-        <a href="livre_dor.html" class="btn-guestbook">Accéder au livre d'or en hommage à Monsieur TRÂN</a>
-    </div>
-
-    <p class="footer">
-        La famille et ses proches vous remercient pour votre présence.
-    </p>
-</div>
+    <nav class="footer-nav">
+        <a href="https://tally.so/r/VLZJXa" target="_blank" class="nav-link">Écrire dans le livre d'or</a>
+        <span class="separator">|</span>
+        <a href="livre_dor.html" class="nav-link">Voir les messages d'hommage</a>
+    </nav>
 
 </body>
 </html>
