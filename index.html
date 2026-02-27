@@ -38,27 +38,32 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.85); 
+            background: rgba(255, 255, 255, 0.9); 
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 25px 0;
+            padding: 40px 0; /* Encore un peu plus d'espace pour les très grands textes */
             backdrop-filter: blur(8px);
-            border-top: 1px solid rgba(155, 89, 182, 0.2);
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
-            z-index: 10; /* S'assure que le menu reste au-dessus de l'image */
+            border-top: 0.5px solid rgba(155, 89, 182, 0.2);
+            box-shadow: 0 -5px 10px rgba(0,0,0,0.08);
         }
 
-        /* Style des liens */
+        /* Style des boutons (Texte et hauteur agrandis) */
         .nav-link {
             text-decoration: none;
             color: #2c3e50;
             font-style: italic;
-            font-size: 1.1em;
+            font-weight: bold; /* Ajout d'un poids pour plus de visibilité */
+            font-size: 2 em;   /* Taille des caractères augmentée significativement */
             transition: all 0.3s ease;
-            padding: 5px 15px;
+            padding: 25px 40px; /* Padding généreux pour la hauteur */
+            border: 1.5px solid rgba(44, 62, 80, 0.2); /* Bordure légèrement plus épaisse */
+            border-radius: 12px;
+            margin: 0 20px;
+            background: rgba(255, 255, 255, 0.6);
+            display: inline-block;
+            text-align: center;
         }
-
         .nav-link:hover {
             color: #9b59b6;
             transform: translateY(-1px);
