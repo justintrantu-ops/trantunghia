@@ -46,7 +46,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 40px auto;
             padding: 0 20px;
         }
@@ -56,7 +56,7 @@
             column-gap: 30px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 850px) {
             .grid {
                 column-count: 1;
             }
@@ -66,7 +66,7 @@
         .entry-card {
             background: var(--card-bg);
             border-radius: 12px;
-            padding: 35px;
+            padding: 40px;
             margin-bottom: 30px;
             break-inside: avoid;
             box-shadow: var(--shadow);
@@ -83,19 +83,19 @@
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
             color: var(--accent-color);
-            opacity: 0.15;
+            opacity: 0.2;
             position: absolute;
-            top: 5px;
-            left: 15px;
+            top: 10px;
+            left: 20px;
         }
 
         .entry-content {
-            font-size: 1rem;
+            font-size: 1.05rem;
             margin-bottom: 25px;
             color: #444;
             position: relative;
             z-index: 1;
-            white-space: pre-line;
+            white-space: pre-line; /* Préserve les sauts de ligne des témoignages */
         }
 
         .entry-media {
@@ -118,11 +118,11 @@
         .entry-author {
             font-weight: 600;
             color: var(--text-primary);
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .entry-date {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: var(--text-secondary);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -156,15 +156,23 @@
             <div class="entry-card">
                 <div class="entry-quote">“</div>
                 <div class="entry-content">
-                    Cô Thơ ơi, Tối qua Cô có ngủ được chút nào không ạ? Con thì trằn trọc mãi không sao chợp mắt được.
+                    Cô Thơ ơi,
 
-                    Những ngày đầu khi đến nhà Cô Chú, trong con vẫn còn cảm giác như chú chỉ đang đi vắng rồi sẽ sớm quay về… như thể chú chỉ về Việt Nam lâu hơn một chút thôi. 
-                    
-                    Con chỉ mong chú được yên nghỉ thanh thản. Chú đã có một cuộc đời thật mãn nguyện, sống trọn vẹn cho gia đình, cho cộng đồng và cho quê hương đất nước. Con thương Cô nhiều.
+                    Tối qua Cô có ngủ được chút nào không ạ? Con thì trằn trọc mãi không sao chợp mắt được.
+
+                    Những ngày đầu khi đến nhà Cô Chú, trong con vẫn còn cảm giác như chú chỉ đang đi vắng rồi sẽ sớm quay về… như thể chú chỉ về Việt Nam lâu hơn một chút thôi. Con cứ nghĩ rồi chú sẽ lại chạm vào công tắc này, mở chiếc đèn kia, vặn cái robinet ấy, hay rót chai rượu quen thuộc. Con vẫn tưởng nụ cười hiền của chú sẽ lại nhìn tụi con như trước.
+
+                    Nhưng tối hôm qua, khi trở về nhà, những suy nghĩ đó không còn giúp con tự trấn an mình được nữa. Con hiểu rằng mình đã thật sự mất chú rồi. Cảm giác ấy khiến con buồn và hụt hẫng quá, Cô ơi. Con không kìm được nước mắt và cảm xúc của mình.
+
+                    Con biết lúc này con cần phải mạnh mẽ để ở bên cạnh và hỗ trợ Cô cùng các anh chị. Con vẫn sẽ cố gắng làm như vậy. Nhưng trong lòng con nhớ chú nhiều lắm… và sẽ có những lúc thật sự rất khó để giữ mình bình tĩnh. 
+
+                    Đây là tấm hình cả nhà mình chơi ở nhà tụi con dịp Noel vừa rồi. Không ngờ đó lại là lần cuối cùng được đón chú ghé thăm…
+
+                    Con chỉ mong chú được yên nghỉ thanh thản. Chú đã có một cuộc đời thật mãn nguyện, sống trọn vẹn cho gia đình, cho cộng đồng và cho quê hương đất nước.
+
+                    Con thương Cô nhiều.
                 </div>
-                <div class="entry-media">
-                    <img src="https://storage.tally.so/private/IMG_7190.jpeg?id=jkVk5a&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImprVms1YSIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE4NTYwNH0.cg3MfbEF_61GqYTS717YC2Vyp_Y9cnQL8D4-X4t0P0I&signature=d198238786276772d3a809f9f0748306f2a9b41033058cc3d3778db1756b7d2a" alt="Souvenir">
-                </div>
+                <div class="entry-media"><img src="https://storage.tally.so/private/IMG_7190.jpeg?id=jkVk5a&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImprVms1YSIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE5NTkwNn0.pHegTO9rno7--uVqNFaCOQa68caofFK-HvYvESu6Hl8&signature=9e9fd1efcb993f570beb217413a55b3191c064c40eae9c5f63227b7e00b2a711" alt="Souvenir"></div>
                 <div class="entry-footer">
                     <div class="entry-author">Trà</div>
                     <div class="entry-date">26 février 2026</div>
@@ -175,12 +183,13 @@
                 <div class="entry-quote">“</div>
                 <div class="entry-content">
                     Cher cau Hai,
+
                     Tu es parti si vite alors que tu avais encore tant d'appétit pour la vie. J'aurai voulu rire et trinquer une dernière fois avec toi. Où que tu sois tu continueras à nous remplir de ta joie.
-                    Je t'embrasse, Mimi
+
+                    Je t'embrasse,
+                    Mimi
                 </div>
-                <div class="entry-media">
-                    <img src="https://storage.tally.so/private/2A06AE63-7704-4FB6-B624-E3F88C411AD2.jpeg?id=jkVXEa&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImprVlhFYSIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE4NTYwNH0.vXp3z5K8eZgHa2-68uqtCdXvcpm4g8CD9zlJyjx_hZw&signature=971b4521674bbc26160e5167742ef22f7f68afa1e7cc5f659525ac10b166aa11" alt="Souvenir">
-                </div>
+                <div class="entry-media"><img src="https://storage.tally.so/private/2A06AE63-7704-4FB6-B624-E3F88C411AD2.jpeg?id=jkVXEa&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImprVlhFYSIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE5NTkwNn0.Dnytl2f2h-F4rOhlHGOI49u5PYgJrYwGW-Mzr0IKBY4&signature=bb311f399b470e46cdfdbeaf9eef89509b3d3cba7330ac4e40593844d2217ade" alt="Souvenir"></div>
                 <div class="entry-footer">
                     <div class="entry-author">Minh Man Nguyen</div>
                     <div class="entry-date">26 février 2026</div>
@@ -202,7 +211,7 @@
                 <div class="entry-quote">“</div>
                 <div class="entry-content">
                     J'ai de nombreux souvenirs de Michel à Mormant et des différents camps d'été.
-                    Tho je partage ta peine.
+                    Tho je partage ta peine
                     Khiem
                 </div>
                 <div class="entry-footer">
@@ -214,12 +223,10 @@
             <div class="entry-card">
                 <div class="entry-quote">“</div>
                 <div class="entry-content">
-                    Merci tonton Popeye pour ta bonne humeur que tu nous a partagé durant ta vie sur cette Terre. 
+                    Merci tonton Popeye pour ta bonne humeur que tu nous a partagé durant ta vie sur cette Terre.
                     Au revoir chú Nghĩa, repose en paix 🙏🫶
                 </div>
-                <div class="entry-media">
-                    <img src="https://storage.tally.so/private/IMG_6964.jpeg?id=9okv4G&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijlva3Y0RyIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE4NTYwNH0.yO2XJ6BnWXjxc8NDqtQlfQIPUler7TnsfovubKxYabo&signature=cfd6ad65bf0a3a5c33eaf9f58e902893ee8336fdc6f8e621ac14edc8a32356c7" alt="Souvenir">
-                </div>
+                <div class="entry-media"><img src="https://storage.tally.so/private/IMG_6964.jpeg?id=9okv4G&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijlva3Y0RyIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE5NTkwNn0.VBSnFJ4SoREUmogwjjEMw0_DhmUUQfXX3UqlYZvKeqU&signature=77376a86d937b8f36c4384c35989f6524ad2b09001459443405c7355bb8050a3" alt="Souvenir"></div>
                 <div class="entry-footer">
                     <div class="entry-author">Đôn Nodey</div>
                     <div class="entry-date">27 février 2026</div>
@@ -229,15 +236,20 @@
             <div class="entry-card">
                 <div class="entry-quote">“</div>
                 <div class="entry-content">
-                    <strong>Pour NGHIA, notre CYCLO.</strong>
-                    Aussi loin que remontent mes souvenirs, Tran Tu Nghia, a toujours été présent dans mes années d’engagement militant...
-                    L’image qui m’est restée longtemps en mémoire, c’est lui et Thơ, sa future épouse, rentrant à trois heures de matin de la Mutualité après une soirée du Têt. Ils marchaient, main dans la main, sur le boulevard St Germain presque vide.
-                    
+                    Pour NGHIA, notre CYCLO.
+                    Aussi loin que remontent mes souvenirs, Tran Tu Nghia, a toujours été présent dans mes années d’engagement militant et d’apprentissage de la fraternité, de la fidélité aux valeurs acquises ou transmises, la première étant le dévouement total a la lutte pour la libération du Sud Vietnam et pour l’indépendance du pays.
+
+                    [...] Nghia était en France depuis le début des années 60, et moi, j’étais fraichement débarqué de Suisse en 1964. Nos activités militantes étaient multiples, de l’organisation des soirées culturelles des conférences sur la situation du pays et, en été, des camps de vacances.
+
+                    C’est au cours de ces camps que j’ai eu l’occasion de le fréquenter et que j’ai pu bénéficier de ses talents et de son enthousiasme. Volontaire pour toutes les tâches, il était d’une humeur égale et son rire faisait partie de notre quotidien.
+
+                    L’image qui m’est restée longtemps en mémoire, c’est lui et Thơ, sa future épouse, rentrant à trois heures de matin de la Mutualité après une soirée du Têt. Ils marchaient, main dans la main, sur le boulevard St Germain presque vide. Et je me suis dit que c’est un beau couple.
+
+                    Panser les blessures de guerres, relever le tourisme, ouvrir le pays au monde pour que Vietnam ne soit plus le nom d’une guerre mais celui d’un pays, voilà le défi que Nghia et les autres amis se sont donnés pour mission d’affronter.
+
                     Adieu aussi à toi, mon jumeau, ami et compagnon des jours difficiles mais inoubliables.
                 </div>
-                <div class="entry-media">
-                    <img src="https://storage.tally.so/private/WhatsApp-Image-2026-02-27-at-03.39.32.jpeg?id=GQGJdz&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkdRR0pkeiIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE4NTYwNH0.ssmCrpXMkzfhhNWY1CspLDtLcosDVDWOGWH7XdtDOeo&signature=f5d873b9f2a2979594d470558a621ce94fc33a95546d9891a9936522d782d8cd" alt="Tableau Cyclo">
-                </div>
+                <div class="entry-media"><img src="https://storage.tally.so/private/WhatsApp-Image-2026-02-27-at-03.39.32.jpeg?id=GQGJdz&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkdRR0pkeiIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE5NTkwNn0.hZL-3gLT3AWaGakOum6m-6PMp1Qf3EKpGlEmNDWVlhQ&signature=2b7cc32e58123ef01782aeaf9136ec4dcd4610e049889e79c4991c256f263463" alt="Le tableau du cyclo"></div>
                 <div class="entry-footer">
                     <div class="entry-author">Nguyen Huu Dong</div>
                     <div class="entry-date">27 février 2026</div>
@@ -250,11 +262,22 @@
                     Lần cuối cùng gặp anh ở nhà chị Phượng (24/01/26).
                     Vô cùng thương tiếc anh. Mong anh yên nghỉ nơi cõi Vĩnh hằng.
                 </div>
-                <div class="entry-media">
-                    <img src="https://storage.tally.so/private/att.m66OpeZuCQXchRzfZbOcweAPTn8NUdduMZ4sBQ3i9ZM.jpeg?id=DZ8XKl&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkRaOFhLbCIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE4NTYwNH0.xrqD1_NCxkyz6Q3km2sX7KNyZ-NVl0qrqeTdq7RqvJs&signature=d39aa6caf1ccf6dbc5b5a7f3dfedb3074682022b8155eb5da387e985379d1e91" alt="Souvenir">
-                </div>
+                <div class="entry-media"><img src="https://storage.tally.so/private/att.m66OpeZuCQXchRzfZbOcweAPTn8NUdduMZ4sBQ3i9ZM.jpeg?id=DZ8XKl&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkRaOFhLbCIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE5NTkwNn0.uNxkbh9bdk_zmyP8UWQZWt-rVlDwddWZLqZxoE-zMSE&signature=426b2c1fa905279b6d573028a83800c852ae8201470387b0b7db6421f904c5a0" alt="Souvenir"></div>
                 <div class="entry-footer">
                     <div class="entry-author">Bùi văn Hải</div>
+                    <div class="entry-date">27 février 2026</div>
+                </div>
+            </div>
+
+            <div class="entry-card">
+                <div class="entry-quote">“</div>
+                <div class="entry-content">
+                    Desormais je n entends plus le mot "ma frangine" quànd on se voit... c est l amitie depuis plus de 60 ans.
+                    Repose en paix "mon frangin".
+                </div>
+                <div class="entry-media"><img src="https://storage.tally.so/private/IMG_1769263082612_1769315874166.jpg?id=jkREz4&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImprUkV6NCIsImZvcm1JZCI6IlZMWkpYYSIsImlhdCI6MTc3MjE5NTkwNn0.YcxytsfWYv4KfUO5eXACdRHAPKAYsl4MC53ZDMxezy0&signature=7ecd937a27ac4ec8f04378fc1edf9bccd72bb3351c6109a43c2c212f6c268dbe" alt="Souvenir"></div>
+                <div class="entry-footer">
+                    <div class="entry-author">FRANCOISE (NHƯỜNG)</div>
                     <div class="entry-date">27 février 2026</div>
                 </div>
             </div>
@@ -263,7 +286,7 @@
     </div>
 
     <footer>
-        <p>En souvenir de Trần Tứ Nghĩa • 1942 - 2026</p>
+        <p>En souvenir de Trần Tứ Nghĩa • 19xx - 2026</p>
     </footer>
 </body>
 </html>
